@@ -1,0 +1,22 @@
+
+#debian 
+
+version: '3.2'
+services:
+  apache:
+    image: httpd:latest
+    container_name: apache
+    ports: 
+      - "8080:80"
+
+
+#alpine
+
+# version: '3.2'
+# services:
+#   apache:
+#     image: httpd:alpine
+#     container_name: apache
+#     ports: 
+#       - "8080:80"      
+

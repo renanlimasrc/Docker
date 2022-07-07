@@ -1,0 +1,8 @@
+version: '3.2'
+
+services:
+  ubuntu:
+    image: ubuntu:20.04 
+    container_name: ubuntu 
+    stdin_open: true
+    tty: true
