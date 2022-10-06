@@ -3,7 +3,7 @@ version: '3.2'
 
 services:
   ubuntu:
-    image: ubuntu:20.04
+    image: ubuntu:latest
     container_name: ubuntu
     stdin_open: true
     tty: true
@@ -13,7 +13,7 @@ services:
         
   
   debian:
-    image: debian
+    image: debian:latest
     container_name: debian
     stdin_open: true
     tty: true
@@ -22,9 +22,9 @@ services:
         ipv4_address: 10.5.0.11
 
 
-  centos:
-    image: centos
-    container_name: centos
+  rockylinux: 
+    image: rockylinux:9
+    container_name: rockylinux
     stdin_open: true
     tty: true
     networks:
